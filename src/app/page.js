@@ -92,7 +92,7 @@ export default function Home() {
             </>
           )}
         </div>
-        <p className="text-center sm:text-left max-w-md pt-10">
+        <p className="text-center text-xl max-w-md pt-10">
           {isSplit
             ? "hungry for more? click on my name."
             : "click on the cookie to learn about me"}
@@ -101,7 +101,9 @@ export default function Home() {
       <footer className="flex gap-[24px] flex-wrap items-center justify-center w-full">
         <Link
           href="https://www.linkedin.com/in/christina-chan99/" target="_blank" rel="noopener noreferrer"
-          className="text-xl text-center font-bold"
+          className={`text-xl text-center font-bold ${
+          isSplit ? "cursor-pointer hover:text-[#f4d58d] transition-colors" : ""
+        }`}
         >
           christinawchan@gmail.com
         </Link>
